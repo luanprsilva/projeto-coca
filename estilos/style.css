@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'anonymous';
-    src: url('../fonte/Anonymous_Pro/AnonymousPro-Regular.ttf') format('truetype');
+    font-family: 'Oi-Regular';
+    src: url(../fonte/Oi/Oi-Regular.ttf) format(truetype);
 }
 *{
     padding: 0px;
@@ -13,43 +13,89 @@
     --verde:#635640;
     --laranja:#FC8300;
 }
-body{
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+}
+#fundo{
+
+    display: grid;
+    grid-template-columns: 5vw repeat(3, 1fr) 5vw;
+    grid-template-rows: repeat(8, 1fr);
+
+    width: 100%;
+    height: 100vh;
     background-image: url(../imagens/img-fundo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-
 }
 .topo{
+    grid-column: 2 / 6;
+    grid-row: 1 ;
+
     display: flex;
     justify-content: space-between;
     align-content: center;
     width: 90%;
-    margin: 10px auto;
+    margin: 0 auto;
+    padding-top: 10px;
 }
 .topo > h1{
     color: white;
-    font-family: 'anonymous', sans-serif ;
+    font-family: 'Oi-Regular', sans-serif ;
+    font-weight: normal;
+    color: #FC8300;
+    text-shadow: 3px 3px 5px #ff840065;
+}
+.topo > h1:hover{
+    transform: translateY(1.2px) translatex(1.2px);
+    transition: 0.3s;
 }
 header {
     margin-top: 5px;
 }
 header > nav{
-    background-color: rgba(255, 255, 255, 0.511);
+    background-color: rgba(164, 164, 164, 0.595);
     padding: 5px;
     border-radius: 5px;
 }
 header > nav > a{
-    color: var(--verde);
+    color: #951D19;
     text-decoration: none;
     padding: 3px;
     margin: 5px;
     
 }
-header > nav > a:hover{
+header > nav:hover{
     color: #FC8300;
     background-color: white;
     border-radius: 5px;
     transition: 0.7s;
+}
+.conteudo{
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: 5vw repeat(3, 1fr) 5vw;
+    grid-template-rows: repeat(8, 1fr);
+  
+    
+}
+.conteudo > p{
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    grid-column: 3 / 4;;
+    
 }
