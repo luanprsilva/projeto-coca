@@ -1,0 +1,52 @@
+@media screen and (min-width: 481px) and (max-width: 767px) {
+
+    .cards-avaliacao {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    div.topo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .container > p,
+    .container > h2,
+    #txt {
+        grid-column: 1;
+    }
+
+    .caixa1,
+    .caixa2,
+    .caixa3,
+    .caixa4,
+    .caixa5 {
+        grid-column: 1;
+        grid-row: 50px;
+        width: 100%;
+        height: 200px;
+    }
+
+    article#txt2 {
+        height: 200px;
+        text-align: justify;
+    }
+
+    iframe {
+        display: none;
+    }
+    #fundo{
+        background-position: center right;
+    }
+    .mapa > a{
+        text-decoration: none;
+        margin-left: 10%;
+        color: #FC8300;
+    }
+}

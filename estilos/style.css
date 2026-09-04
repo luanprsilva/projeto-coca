@@ -226,10 +226,29 @@ section > p > strong{
 .card-nota p {
     color: #555;
 }
-@media (max-width: 600px) {
-    .cards-avaliacao {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
+#txt2{
+    width: 30vw;
+    margin:auto;
+    height: 100px;
+
+}
+footer{
+    background-color: gainsboro;
+    margin: 0px;
+    height: 100vh;
+}
+#footer{
+    margin: auto;
+    font-size: 24px;
+    display: inline-block;
+    display: flex;
+}
+#footer > section.mapa{
+    width: 100vw;
+}
+.mapa > a{
+    text-decoration: none;
+    margin-left: 22%;
+    color: #FC8300;
 }
 
